@@ -1,140 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gudiya Hair Menu</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
-    
-    <style>
-        body {
-            background-color: #c4b5a5; /* Pehli image ka beige-brown background */
-            margin: 0;
-            padding: 40px 20px;
-            font-family: 'Playfair Display', serif;
-            display: flex;
-            justify-content: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .menu-wrapper {
-            background-color: #f5f5f5; /* Light background for text area */
-            width: 100%;
-            max-width: 800px;
-            padding: 50px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-        }
+<title>Gudiya Hair</title>
 
-        .header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Great+Vibes&display=swap" rel="stylesheet">
 
-        .main-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 50px;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            margin: 0;
-        }
+<style>
 
-        .cursive-title {
-            font-family: 'Great Vibes', cursive; /* Handwriting font */
-            font-size: 40px;
-            color: #7d6b5d;
-            margin-top: -15px;
-        }
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background: #c4b5a5;
+}
 
-        .menu-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-        }
+/* HERO DESIGN */
+.hero {
+    position: relative;
+    height: 600px;
+    background: #c4b5a5;
+}
 
-        .section-title {
-            font-family: 'Great Vibes', cursive;
-            font-size: 28px;
-            color: #333;
-            margin-bottom: 15px;
-        }
+/* Beige blocks (design ke liye) */
+.block1 {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    background: #b7a597;
+    top: 0;
+    left: 0;
+}
 
-        .category-name {
-            font-weight: bold;
-            font-size: 14px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            border-bottom: 1px solid #333;
-            margin-bottom: 15px;
-            display: inline-block;
-        }
+.block2 {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: #d6c7b3;
+    bottom: 0;
+    left: 0;
+}
 
-        .item {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 10px;
-            font-size: 14px;
-        }
+.block3 {
+    position: absolute;
+    width: 25%;
+    height: 50%;
+    background: #eaeaea;
+    top: 0;
+    right: 0;
+}
 
-        .dots {
-            flex-grow: 1;
-            border-bottom: 1px dotted #888;
-            margin: 0 10px;
-        }
+/* IMAGES */
+.img1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 260px;
+}
 
-        .price {
-            font-weight: bold;
-        }
+.img2 {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    width: 220px;
+}
 
-        /* Mobile ke liye responsive */
-        @media (max-width: 600px) {
-            .menu-grid { grid-template-columns: 1fr; }
-        }
-    </style>
+.img3 {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    width: 220px;
+}
+
+/* MENU */
+.menu-wrapper {
+    background: #fff;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+    margin-top: -80px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.header {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.cursive-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 35px;
+    color: #7d6b5d;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.dots {
+    flex: 1;
+    border-bottom: 1px dotted #999;
+    margin: 0 10px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+@media(max-width:600px){
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
 </head>
+
 <body>
 
+<!-- DESIGN AREA -->
+<div class="hero">
+    <div class="block1"></div>
+    <div class="block2"></div>
+    <div class="block3"></div>
+
+    <img src="hair1.jpg" class="img1">
+    <img src="hair2.jpg" class="img2">
+    <img src="hair3.jpg" class="img3">
+</div>
+
+<!-- MENU -->
 <div class="menu-wrapper">
+
     <div class="header">
         <h1 class="main-title">Gudiya Hair</h1>
         <div class="cursive-title">Service Menu</div>
     </div>
 
     <div class="menu-grid">
-        <div class="section">
-            <div class="section-title">Women's Cut</div>
-            <div class="category-name">Hair Cut & Wash</div>
-            <div class="item"><span>Head Wash Only</span><div class="dots"></div><span class="price">₹200</span></div>
-            <div class="item"><span>Head Wash + Blow Dry</span><div class="dots"></div><span class="price">₹300</span></div>
-            <div class="item"><span>Hair Cut (No Blow Dry)</span><div class="dots"></div><span class="price">₹350</span></div>
-            <div class="item"><span>Hair Cut + Blow Dry</span><div class="dots"></div><span class="price">₹350</span></div>
-            <div class="item"><span>Hair Cut + Head Wash</span><div class="dots"></div><span class="price">₹550</span></div>
+
+        <div>
+            <div class="item"><span>Hair Cut</span><div class="dots"></div><span class="price">₹350</span></div>
+            <div class="item"><span>Hair Spa</span><div class="dots"></div><span class="price">₹1000</span></div>
         </div>
 
-        <div class="section">
-            <div class="section-title">Styling</div>
-            <div class="category-name">Hair Spa</div>
-            <div class="item"><span>Basic Hair Spa</span><div class="dots"></div><span class="price">₹1000</span></div>
-            <div class="item"><span>Hydrating Hair Spa</span><div class="dots"></div><span class="price">₹1300</span></div>
-            <div class="item"><span>Keratin Based Spa</span><div class="dots"></div><span class="price">₹1500</span></div>
-            <div class="item"><span>Anti-Dandruff Spa</span><div class="dots"></div><span class="price">₹1350</span></div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Treatments</div>
-            <div class="item"><span>Smoothing</span><div class="dots"></div><span class="price">₹2800</span></div>
+        <div>
             <div class="item"><span>Keratin</span><div class="dots"></div><span class="price">₹2000</span></div>
-            <div class="item"><span>Botox</span><div class="dots"></div><span class="price">₹2000</span></div>
-            <div class="item"><span>Nanoplastia</span><div class="dots"></div><span class="price">₹2500</span></div>
+            <div class="item"><span>Hair Color</span><div class="dots"></div><span class="price">₹3000</span></div>
         </div>
 
-        <div class="section">
-            <div class="section-title">Hair Colour</div>
-            <div class="item"><span>Root Touch-Up</span><div class="dots"></div><span class="price">₹1500</span></div>
-            <div class="item"><span>Global Colour</span><div class="dots"></div><span class="price">₹3000</span></div>
-            <div class="item"><span>Highlights</span><div class="dots"></div><span class="price">₹2500</span></div>
-            <div class="item"><span>Balayage</span><div class="dots"></div><span class="price">₹3000</span></div>
-        </div>
     </div>
+
 </div>
 
 </body>
